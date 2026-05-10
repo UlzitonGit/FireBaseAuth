@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "424357868187",
+    "project_id": "auth-3913d",
+    "storage_bucket": "auth-3913d.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:424357868187:android:4420b828ee9f0533c0cc3e",
+        "android_client_info": {
+          "package_name": "com.DefaultCompany.FireBaseLogs"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEuUtL8iK9757OfYhYD-BMn2cYvMj8Yhc"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
