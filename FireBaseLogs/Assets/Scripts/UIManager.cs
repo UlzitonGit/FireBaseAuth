@@ -3,7 +3,6 @@ using UnityEngine;
 
 public class UIManager : MonoBehaviour
 {
-    [SerializeField] private AuthManager authManager;
     [SerializeField] private GameObject loginScreen;
     [SerializeField] private GameObject gameScreen;
     [SerializeField] private GameObject leaderboardScreen;
@@ -23,7 +22,7 @@ public class UIManager : MonoBehaviour
 
     public void LeaderboardScreen()
     {
-        authManager.UpdateLeaderboard();
+        //authManager.UpdateLeaderboard();
         leaderboardScreen.gameObject.SetActive(true);
         gameScreen.gameObject.SetActive(false);
     }

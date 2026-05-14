@@ -703,19 +703,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 395326016}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 647763655}
-        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
-        m_MethodName: LeaderboardScreen
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &395326016
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -845,7 +833,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7fa373c27c405d343b814cbc24447984, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::GameController
-  _authManager: {fileID: 565588129}
+  _authManager: {fileID: 0}
   dataManager: {fileID: 1368476307}
   uiManager: {fileID: 647763655}
 --- !u!1 &414650983
@@ -1119,57 +1107,6 @@ Transform:
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &565588128
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 565588130}
-  - component: {fileID: 565588129}
-  m_Layer: 0
-  m_Name: AuthManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &565588129
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565588128}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dae09598b27080d448ea4b321dd26ebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: Assembly-CSharp::AuthManager
-  uiManager: {fileID: 647763655}
-  dataManager: {fileID: 1368476307}
-  dependencyStatus: 0
-  emailLoginField: {fileID: 1356667568}
-  passwordLoginField: {fileID: 779120106}
-  scoreElement: {fileID: 3363873970394177977, guid: 2bbfd3fbc7d97ab419de23f5421aa628, type: 3}
-  scoreboardContent: {fileID: 414650984}
---- !u!4 &565588130
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 565588128}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.14208, y: 0.52526, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1645,7 +1582,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8487b3d70191aa642b3870f91e77cb51, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::UIManager
-  authManager: {fileID: 565588129}
+  authManager: {fileID: 0}
   loginScreen: {fileID: 1484675047}
   gameScreen: {fileID: 413007601}
   leaderboardScreen: {fileID: 1308565647}
@@ -2048,9 +1985,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 565588129}
-        m_TargetAssemblyTypeName: AuthManager, Assembly-CSharp
-        m_MethodName: Register
+      - m_Target: {fileID: 647763655}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: GameScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -2433,9 +2370,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 565588129}
-        m_TargetAssemblyTypeName: AuthManager, Assembly-CSharp
-        m_MethodName: Login
+      - m_Target: {fileID: 647763655}
+        m_TargetAssemblyTypeName: UIManager, Assembly-CSharp
+        m_MethodName: GameScreen
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -3982,5 +3919,4 @@ SceneRoots:
   - {fileID: 619394802}
   - {fileID: 647763654}
   - {fileID: 562504331}
-  - {fileID: 565588130}
   - {fileID: 1368476308}
